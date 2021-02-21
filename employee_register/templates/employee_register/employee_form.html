@@ -1,0 +1,9 @@
+{% extends "employee_register/base.html" %}
+
+{% block content %}
+<form action="" method="post" autocomplete="off">
+    {% csrf_token %}
+    {{form}}
+    <button type="submit" class="btn btn-success"><i class="fas fa-database"></i>Submit</button>
+</form>
+{% endblock content %}
